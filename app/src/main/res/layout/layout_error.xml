@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/root_linearlayout_mm"
+    android:gravity="center"
+    android:background="@drawable/ripe_click_bg">
+
+    <ImageView
+        android:layout_width="179dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icon_page_error" />
+
+    <TextView
+        android:id="@+id/tv_error_content"
+        style="@style/text_16"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/color_DBDBDB"
+        android:text="点击屏幕，重新加载" />
+
+</LinearLayout>

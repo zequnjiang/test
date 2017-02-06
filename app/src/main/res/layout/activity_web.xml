@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qsq.kuaifenqi.common.ui.view.LoadFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_root_view"
+    style="@style/LoadFrameLayoutStyle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_custom_title"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/app_back_material_black"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:padding="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_sub_title"
+                style="@style/text_17"
+                android:text="title"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/iv_back"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tv_main_title"
+                style="@style/text_17"
+                android:text=""
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/tv_share"
+                style="@style/text_15"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="全部标记已读"
+                android:paddingRight="16dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.qsq.kuaifenqi.common.ui.view.BaseWebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:id="@+id/view_shadow_line"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/shadow" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+    
+</com.qsq.kuaifenqi.common.ui.view.LoadFrameLayout>

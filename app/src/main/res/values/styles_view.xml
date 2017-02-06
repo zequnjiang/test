@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Toolbar popup -->
+    <style name="Toolbar_Popup" parent="Base.ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <!-- base all wrap content -->
+    <style name="base_ww_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- base all match content -->
+    <style name="base_mm_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="base_mw_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="base_wm_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="root_linearlayout_mm" parent="base_mm_content">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="root_linearlayout_mw" parent="base_mw_content">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="text_14" parent="base_ww_content">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_15" parent="base_ww_content">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_16" parent="base_ww_content">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/color_383838</item>
+    </style>
+
+    <style name="text_17" parent="base_ww_content">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textColor">@color/color_383838</item>
+    </style>
+
+    <!--加载Dialog样式-->
+    <style name="loading_trans" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="loading_dialog_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/on_screen_menu_left_appear</item>
+        <item name="android:windowExitAnimation">@anim/on_screen_menu_left_disappear</item>
+    </style>
+
+    <!-- Load frameLayout  style -->
+    <style name="LoadFrameLayoutStyle" parent="base_mm_content">
+        <item name="emptyView">@layout/layout_empty</item>
+        <item name="errorView">@layout/layout_error</item>
+        <item name="loadingView">@layout/layout_loading</item>
+    </style>
+
+    <!--垂直的线-->
+    <style name="line_vertical">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_DBDBDB</item>
+    </style>
+
+    <!--水平线-->
+    <style name="line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/color_DBDBDB</item>
+    </style>
+
+</resources>
